@@ -27,6 +27,12 @@ body,.drop-zone{
     border: 2px dashed var(--border-color);
     margin: 30px;
     border-radius: 10px;
+    transition: all .2s ease;
+}
+
+.dragged.drop-zone{
+    background: var(--main-bg-color);
+    border-color: #2196f3;
 }
 
 .icon-container{
@@ -49,14 +55,23 @@ body,.drop-zone{
     filter: grayscale(.3);
 }
 
-.dragged icon-container .right{
+.dragged .icon-container .right{
     transform: rotate(10deg) translateX(20px) scale(.9);
     transform-origin: bottom;   
 }
-.dragged icon-container .left{
+.dragged .icon-container .left{
     transform: rotate(-10deg) translateX(-20px) scale(.9);
     transform-origin: bottom; 
 }
-.dragged icon-container .center{
+.dragged .icon-container .center{
     transform: translateY(-5px);
+}
+
+#fileInput{
+    display: none;
+}
+
+.browsebtn{
+    color: #2196f3;
+    cursor: pointer;
 }
