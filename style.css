@@ -1,0 +1,16 @@
+:root{
+    --main-bg-color:#eff5fe;
+}
+body,html{
+    font-family: system-ui;
+    background: var(--main-bg-color);
+    height: 100%;
+    padding: 0%;
+    margin: 0;
+}
+
+.drop-zone{
+    width: 500px;
+    min-height: 200px;
+    border: 2px dashed;
+}
